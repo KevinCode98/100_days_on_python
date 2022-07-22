@@ -43,14 +43,14 @@ def calculator():
         answare = calculation_function(num1, num2)
         print(f'{num1} {operation_symbol} {num2} = {answare}')
 
-        if input("Type 'y' to continue calculating with {answare}, or type 'n' to exit: ") == 'y':
+        if input(f"Type 'y' to continue calculating with {answare}, or type 'n' to exit: ") == 'y':
             num1 = answare
         else:
             should_continue = False
             if input ("Type 'y' to exit the calculation, or type 'n' to continue.") == 'n':
                 calculator()
             else: 
-                pass
+                break
 
             
 calculator()
